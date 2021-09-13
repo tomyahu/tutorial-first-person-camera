@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Plataforma.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Jugador.tscn" type="PackedScene" id=2]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="KinematicBody" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.24728, 0 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.624425, 0.781085, 0, -0.781085, 0.624425, 0, 34.5957, 0 )
+light_energy = 0.48
+shadow_enabled = true
+
+[node name="Cubos" type="Spatial" parent="."]
+
+[node name="StaticBody" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.46478, 0.591926, -0.658486, 0, 0.743693, 0.668521, 0.885426, -0.310715, 0.345654, -1.89565, 6.73104, -1.39123 )
+
+[node name="StaticBody2" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.96729, 0.169586, -0.188655, 0, 0.743693, 0.668521, 0.253674, -0.646653, 0.719367, 31.9925, 6.73104, 25.4967 )
+
+[node name="StaticBody3" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.736511, -0.452205, 0.503054, 0, 0.743693, 0.668521, -0.676426, -0.492373, 0.547738, -25.0231, 6.73104, 38.3302 )
+
+[node name="StaticBody8" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.736511, -0.452205, 0.503054, 0, 0.743693, 0.668521, -0.676426, -0.492373, 0.547738, -35.0771, 6.73104, 3.26315 )
+
+[node name="StaticBody4" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.96729, 0.169586, -0.188655, 0.21513, -0.154313, 0.964317, 0.134423, -0.973359, -0.185748, 32.1809, 6.73104, -30.7989 )
+
+[node name="StaticBody5" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.52296, 0.569819, -0.633893, 0, 0.743693, 0.668521, 0.852357, -0.34961, 0.388922, -30.5421, 6.73104, -40.9238 )
+
+[node name="StaticBody6" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.777783, 0.420188, -0.467436, 0, 0.743693, 0.668521, 0.628533, -0.519964, 0.578432, 5.18158, 6.73104, -45.453 )
+
+[node name="StaticBody7" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.96729, 0.169586, -0.188655, 0, 0.743693, 0.668521, 0.253674, -0.646653, 0.719367, 9.59933, 6.04744, 34.9899 )
+
+[node name="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( 50, 0, 0, 0, 0.1, 0, 0, 0, 50, 0, 0, 0 )
